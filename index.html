@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Human Face Constellation</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <main>
+    <h1>Human Face Constellation</h1>
+
+    <p>
+      Facial geometry is transformed locally into a slowly moving particle
+      constellation. No facial images are uploaded or compared with reference
+      libraries.
+    </p>
+
+    <div class="controls">
+      <button id="startButton">Start camera</button>
+      <button id="stopButton">Stop camera</button>
+    </div>
+
+    <p>
+      Status: <strong id="status">Camera not started</strong>
+      · Faces: <strong id="faceCount">0</strong>
+    </p>
+
+    <video id="video" autoplay muted playsinline></video>
+    <canvas id="visualiser"></canvas>
+  </main>
+
+  <script type="module" src="app.js"></script>
+</body>
+</html>
